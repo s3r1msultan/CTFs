@@ -2,7 +2,7 @@
 
 > You’ve been informed that a website might be serving as a front for a large criminal network. Part of their revenue supposedly comes from selling cookies that can make you float like an airship… A rather tempting proposition. Their slogan, it seems, is: "Always wondered how to get the coolest and the highest quality products in your region ? Search no more, this new website allows you to do so !"
 >
-> Attachment : [app.py](https://github.com/s3r1msultan/CTFs/blob/main/HackDayCTF/Web/Your%20region's%20finest/app.py) , sha256 : 415a046c5c03ac1ff0646cae082503af9d6bf52b7ff6db00ff0009ab7f0b0ba
+> Attachment : [app.py](app.py) , sha256 : 415a046c5c03ac1ff0646cae082503af9d6bf52b7ff6db00ff0009ab7f0b0ba
 >
 > `challenges.hackday.fr:58990`
 
@@ -81,7 +81,7 @@ So now we know the order of our actions:
 5. Forge new JWT with SQL injection for "favorite_product" key.
 6. Open `/favorite_product_info` and get the flag.
 
-Here you can see the full script to solve this task ([solution.py](https://github.com/s3r1msultan/CTFs/blob/main/HackDayCTF/Web/Your%20region's%20finest/solution.py)).
+Here you can see the full [script](solution.py) to solve this task.
 
 ```python
 import jwt, string, random, requests, logging, math, re, time
