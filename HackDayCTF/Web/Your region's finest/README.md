@@ -211,5 +211,8 @@ if __name__ == "__main__":
     else:
         logging.error("Failed to retrieve the flag.")
 ```
+Running this script will provde us the flag.
+
+![Script Result](img1.png)
 
 `HACKDAY{Th4t_s_S0m3_g000000000000d_qu4lity!}`
