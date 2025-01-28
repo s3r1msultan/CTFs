@@ -38,7 +38,7 @@ The following script sets up a Node.js server to redirect requests to a specific
 
 ![Ngrok URL Testing](img5.png)
 
-This worked. Afterward, I decided to use [DirBuster](https://www.kali.org/tools/dirbuster/) to find secret directories and files, but it didn't yield any results. Then I decided to check different ports on the internal server. Firstly, I changed the server script.
+This worked. Afterward, I decided to use [DirBuster](https://www.kali.org/tools/dirbuster/) to find secret directories and files, but it didn't yield any results. Then I decided to check different ports on the internal server. Firstly, I changed the [server script](server.js).
 
 ```js
 const http = require('http');
@@ -55,7 +55,7 @@ http.createServer((req, res) => {
 }).listen(8080, () => console.log('Node.js web server at 8080 is logging client info and redirecting...'));
 ```
 
-Secondly, I created a Python script to send the ngrok URL with ports from 1 to 1000 to the `/api/check` route.
+Secondly, I created a [Python script](script.py) to send the ngrok URL with ports from 1 to 1000 to the `/api/check` route.
 
 ```python
 import requests
